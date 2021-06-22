@@ -69,7 +69,11 @@ class shard extends ws {
       this.client.emit("error", e)
     })
   }
-
+  
+  get pingkoneksi() {
+    return this._ping
+  }
+  
   get terhubung() {
     return this._readyState == ws.OPEN;
   }
@@ -129,7 +133,7 @@ class Client extends EventEmitter {
  
   get ping() {
     // mean
-    return this.shards.reduce((a,b)=> a.ping + b.ping, 0) / this.shards.length
+    return this.shards.reduce((a,b)=> a.pingkoneksi + b.pingkoneksi, 0) / this.shards.length
   }
 
   login(token) {

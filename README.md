@@ -34,9 +34,9 @@ client.login("token")
   
 Please read documentations from discord for understanding bots here:  
 - [Bots](https://discord.com/developers/docs/intro)  
-- [Message.guild](https://discord.com/developers/docs/resources/guild)
-- [Message.channel](https://discord.com/developers/docs/resources/channel)  
-- [Message.pengirim](https://discord.com/developers/docs/resources/user)  
+- [Guilds](https://discord.com/developers/docs/resources/guild)
+- [Channels](https://discord.com/developers/docs/resources/channel)  
+- [Users](https://discord.com/developers/docs/resources/user)  
 <br>
 
 ### Quick documentation  

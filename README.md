@@ -31,27 +31,30 @@ client.on("messageDiEdit", messageHandler)
 
 client.login("token")
 ```  
-
+  
 Please read documentations from discord for understanding bots here:  
 - [Bots](https://discord.com/developers/docs/intro)  
 - [Message.guild](https://discord.com/developers/docs/resources/guild)
 - [Message.channel](https://discord.com/developers/docs/resources/channel)  
 - [Message.pengirim](https://discord.com/developers/docs/resources/user)  
+<br>
+
+### Quick documentation  
 
 client.guilds -> Guilds[]
 client.channels -> (TextChannel|DirektoriChannel)[]  
 client.users -> Users[]  
-
-client.on("aktif", client)
+  
+client.on("aktif", client)  
 `listen to every client connected to discord session`  
-
+  
 client.on("message", fn)   
 `listen to every message received from websocket`  
-
+  
 fn(message): 
--  message.member -> Member  
--  message.pengirim -> User  
--  message.guild -> Guild  
--  message.channel -> TextChannel  
+-  message.member -> Member
+-  message.pengirim -> User
+-  message.guild -> Guild
+-  message.channel -> TextChannel
 
--  message.channel.kirim((string Message|object (embed|components)))  
+-  message.channel.kirim((string Message|object (embed|components))) -> Promise  
